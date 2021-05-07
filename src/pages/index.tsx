@@ -16,7 +16,7 @@ export default function Home() {
             Download CV
             </button>
             <a className={styles.icon} href="https://github.com/JonathaGomes" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
-            <a className={styles.icon} href="https://github.com/JonathaGomes" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a className={styles.icon} href="https://www.linkedin.com/in/jonatha-gomes-99587a1ab/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
           </div>
         </div>
       </div>

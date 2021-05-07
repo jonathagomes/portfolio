@@ -35,7 +35,7 @@ body,
 input,
 textarea,
 button {
-  font: 500 1rem Nunito, sans-serif;
+  font: 500 1rem "Nunito", sans-serif;
 }
 
 h1,
@@ -45,8 +45,8 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  font-family: Nunito, sans-serif;
-  color: #000;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
 }
 
 h1 {
@@ -63,4 +63,8 @@ button {
 
 a {
   text-decoration: none;
+}
+
+main {
+  background-color: var(--black);
 }

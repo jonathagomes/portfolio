@@ -5,7 +5,7 @@
 - NextJs
 - ReactJS
 - Typescript
-- Sass
+- Styled-components
 
 # 🏷️ Layout
 

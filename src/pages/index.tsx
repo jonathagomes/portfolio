@@ -1,39 +1,47 @@
-import styles from "../styles/home.module.scss";
-
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
+import { Container } from "../styles/home";
+import Sidebar from "../components/Sidebar";
+import { useSidebarContext } from "../contexts/SidebarContext";
 
 export default function Home() {
+  const { isOpenMobileMenu } = useSidebarContext()
+  
   return (
     <>
       <motion.div animate={{ x: 0 }}  initial={{ x: -1000 }} transition={{ duration: 1 }}>
         <Header />
       </motion.div>
-      <div id="home" className={styles.container}>
-        <div className={styles.content}>
-          <div className={styles.leftSide}>
+      { isOpenMobileMenu && (
+        <motion.div animate={{ x: 0 }} initial={{ x: -500 }} transition={{ duration: 1 }} >
+          <Sidebar />
+        </motion.div>
+      )}
+      <Container id="home">
+        <div>
+          <div>
           <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1.3 }} >
             <h1>Hello! Eu sou o</h1>
           </motion.div>
           <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1.6 }} >
-            <h1 className={styles.textOrange}>Jonatha Gomes</h1>
+            <h1>Jonatha Gomes</h1>
           </motion.div>
           <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1.9 }} >
-            <h2>E sou um <span className={styles.textGreen}>Fullstack Developer</span></h2>
+            <h2>E sou um <span>Fullstack Developer</span></h2>
           </motion.div>
           <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 2.2 }} >
-            <div className={styles.links}>
+            <div>
               <button type="button">Download CV</button>
-              <a className={styles.icon} href="https://github.com/JonathaGomes" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
-              <a className={styles.icon} href="https://www.linkedin.com/in/jonatha-gomes-99587a1ab/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+              <a href="https://github.com/JonathaGomes" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
+              <a href="https://www.linkedin.com/in/jonatha-gomes-99587a1ab/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </motion.div>
           </div>
           
         </div>
-      </div>
+      </Container>
     </>
   );
 }

@@ -23,14 +23,13 @@ export default function Home() {
           <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 1.9 }} >
             <h2>E sou um <span className={styles.textGreen}>Fullstack Developer</span></h2>
           </motion.div>
-          
+          <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }} transition={{ duration: 2.2 }} >
             <div className={styles.links}>
-              
-                <button type="button">Download CV</button>
-              
+              <button type="button">Download CV</button>
               <a className={styles.icon} href="https://github.com/JonathaGomes" target="_blank"><FontAwesomeIcon icon={faGithubSquare} /></a>
               <a className={styles.icon} href="https://www.linkedin.com/in/jonatha-gomes-99587a1ab/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
+          </motion.div>
           </div>
           
         </div>

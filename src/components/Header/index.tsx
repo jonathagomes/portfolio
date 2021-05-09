@@ -1,28 +1,34 @@
-import { HeaderContainer } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useSidebarContext } from "../../contexts/SidebarContext";
+
+import { 
+  HeaderContainer,
+  LogoContainer,
+  MenuDesktop,
+  IconMenuMobile,
+ } from "./styles";
 
 export default function Header() {
   const { isOpenMobileMenu ,toggleMobileMenu } = useSidebarContext();
   return (
   <HeaderContainer>
-    <div className="logo">
+    <LogoContainer>
       <h1><a href="/">JG</a></h1>
-    </div>
-    <nav className="menu-desktop">
+    </LogoContainer>
+    <MenuDesktop>
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Habilidades</a></li>
         <li><a href="#">Projetos</a></li>
       </ul>
-    </nav>
-    <nav className="icon-menu-mobile">
+    </MenuDesktop>
+    <IconMenuMobile>
       <span onClick={toggleMobileMenu}>
         <FontAwesomeIcon icon={ isOpenMobileMenu === false ? faBars : faTimes } />
       </span>
-    </nav>
+    </IconMenuMobile>
   </HeaderContainer>
  );
 }

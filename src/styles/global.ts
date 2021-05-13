@@ -8,11 +8,10 @@ export default createGlobalStyle`
   }
 
   :root {
-    --white: #fff;
-    --green: #20d361;
-    --purple: #9466ff;
-    --orange: #f8921e;
-    --black: #0d0d0f;
+    --white: #FEFEFE;
+    --red: #F13F3E;
+    --gray: #9B9B9B;
+    --black: #1E1E1E;
   }
 
   @media (max-width: 1080px) {
@@ -38,7 +37,7 @@ export default createGlobalStyle`
 input,
 textarea,
 button {
-  font: 500 1rem "Nunito", sans-serif;
+  font: 500 1rem "Montserrat", sans-serif;
 }
 
 h1,
@@ -47,8 +46,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
 }
 

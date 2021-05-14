@@ -13,7 +13,7 @@ export default function Homepage() {
     </Title>
     <h2>FULLSTACK DEVELOPER</h2>
     <p>Desenvolvendo aplicações sensacionais
-    com tecnologias incríveis.</p>
+    com<br/>tecnologias incríveis.</p>
     <a href="#"></a>
    </div>
    <div></div>

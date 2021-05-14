@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Homepage from "../components/Homepage";
+import Sidebar from "../components/Sidebar";
 
 import {
   Container
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <Container>
       <Header />
+      <Sidebar />
       <Homepage />
     </Container>
   );

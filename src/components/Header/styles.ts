@@ -29,5 +29,12 @@ export const HeaderContent = styled.div`
   font-size: 2rem;
   cursor: pointer;
  }
+
+ @media (max-width: 500px) {
+  #cancel {
+   display: none;
+  }
+ }
+
 `
 

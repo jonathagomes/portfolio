@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Homepage from "../components/Homepage";
 import Sidebar from "../components/Sidebar";
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Sidebar />
       <Homepage />
+      <Footer />
     </Container>
   );
 }

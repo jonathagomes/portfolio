@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const HomepageContainer = styled.div`
- width: 50%; 
+ width: 90%; 
  height: calc(100vh - 5rem);
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- margin-left: 5rem;
+ margin: auto;
  border-left: 1px solid rgba(255, 255, 255, 0.06);
  border-right: 1px solid rgba(255, 255, 255, 0.06);
  h2 {
@@ -44,16 +44,29 @@ export const Title = styled.div`
 display: flex;
 justify-content: flex-start;
 h1 {
- font-size: 7rem;
+ font-size: 6rem;
  color: var(--red);
  line-height: 1;
+
+ @media (max-width: 500px) {
+  font-size: 5rem;
+ }
+ @media (max-width: 400px) {
+  font-size: 4rem;
+ }
 }
 span {
  color: var(--white);
  transform: rotate(-90deg) !important;
  line-height: 1;
- font-size: 2.2rem;
+ font-size: 2rem;
  margin-left: 1.4rem;
  font-weight: bold;
+ @media (max-width: 500px) {
+  font-size: 1.5rem;
+ }
+ @media (max-width: 400px) {
+  font-size: 1.2rem;
+ }
 }
 `

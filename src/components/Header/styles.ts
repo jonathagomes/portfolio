@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+ width: 100%;
+`
+
+export const HeaderContent = styled.div`
+ width: 90%;
+ height: 5rem;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
- width: 90%;
- height: 5rem;
  margin: auto;
- border-left: 1px solid rgba(255, 255, 255, 0.06);
-
  a {
   color: var(--white);
   transition: color 0.3s;
@@ -28,3 +30,4 @@ export const HeaderContainer = styled.header`
   cursor: pointer;
  }
 `
+

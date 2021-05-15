@@ -1,7 +1,7 @@
-
+import { Teste } from "./styles";
 export default function Sidebar() {
  return(
-  <div>
+  <Teste>
    <nav>
     <ul>
      <li><a href="#">Início</a></li>
@@ -10,6 +10,6 @@ export default function Sidebar() {
      <li><a href="#">Projetos</a></li>
     </ul>
    </nav>
-  </div>
+  </Teste>
  );
 }

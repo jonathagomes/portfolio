@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Homepage from "../components/Homepage";
@@ -12,11 +13,12 @@ export default function Home() {
   const { isVisible } = useSidebarContext()
   return (
     <Container>
-      <Header />
+      <Header/>
       {isVisible && (
         <Sidebar />
       )}
       <Homepage />
+      <About />
       <Footer />
     </Container>
   );

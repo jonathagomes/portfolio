@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 export const HomepageContainer = styled.div`
- width: 90%; 
+ width: 100%; 
+ background-image: url("bg-home.jpeg");
+`
+
+export const HomepageContent = styled.div`
+ width: 90%;
  height: calc(100vh - 5rem);
  display: flex;
  flex-direction: row;

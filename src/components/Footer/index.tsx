@@ -1,7 +1,8 @@
 import { 
  FooterContainer,
  FooterContent,
- Copyright
+ Copyright,
+ Logo
  } from "./styles";
 
 export default function Footer() {
@@ -10,7 +11,12 @@ export default function Footer() {
    <FooterContainer>
     <FooterContent>
      <div>
-       <h1><a href="#">JOHNNY<span>DEV</span></a></h1>
+       <h1>
+          <Logo href="#">
+           <span>JOHNNY</span>
+           <span>DEV</span>
+          </Logo>
+        </h1>
      </div>
      <nav>
       <ul>

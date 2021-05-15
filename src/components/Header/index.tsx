@@ -2,7 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
  HeaderContainer,
- HeaderContent
+ HeaderContent,
+ Logo,
+ 
 } from "./styles";
 import { useSidebarContext } from "../../contexts/SidebarContext";
 
@@ -12,7 +14,11 @@ export default function Header() {
   <HeaderContainer>
    <HeaderContent>
     <div>
-     <h1><a href="/">JOHNNY<span>DEV</span></a></h1>
+     <h1>
+      <Logo href="/">
+       <span>JOHNNY</span>
+       <span>DEV</span>
+      </Logo></h1>
     </div>
     <div>
      { isVisible === true ? (

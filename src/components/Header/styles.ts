@@ -38,3 +38,19 @@ export const HeaderContent = styled.div`
 
 `
 
+export const Logo = styled.a`
+:hover span:nth-child(1) {
+ color: var(--red);
+}
+:hover span:nth-child(2) {
+ color: var(--white);
+}
+span:nth-child(1) {
+ color:var(--white);
+ transition: 0.5s;
+}
+span:nth-child(2) {
+ color:var(--red);
+ transition: 0.5s;
+}
+`

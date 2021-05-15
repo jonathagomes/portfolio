@@ -42,6 +42,9 @@ export const HomepageContent = styled.div`
 a:hover:before {
  width:130px;
  content: 'VER PROJETOS';
+ @media (max-width: 500px) {
+  width:110px;
+ }
 }
 `
 

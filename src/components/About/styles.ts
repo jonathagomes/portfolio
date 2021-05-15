@@ -47,6 +47,10 @@ a:before {
 a:hover:before {
  width:180px;
  content: 'VER MEU CURRÍCULO';
+
+ @media (max-width: 500px) {
+  width:150px;
+ }
 }
 `
 

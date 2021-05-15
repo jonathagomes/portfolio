@@ -44,7 +44,7 @@ export const FooterContent = styled.div`
    li a {
     color: var(--white);
     transition: color 0.3s;
-    font-size: 1.5rem;
+    font-size: 1rem;
     :hover {
      color:var(--red);
     }

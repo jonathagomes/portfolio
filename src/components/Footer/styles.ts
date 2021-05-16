@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
  width: 100%;
- background-image: url("bg.jpg");
+ background-image: url("bg-home.jpg");
 `
 
 export const FooterContent = styled.div`

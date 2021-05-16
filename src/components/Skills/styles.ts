@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
 width: 100%; 
-background-image: url("bg.jpg");
+background-image: url("bg-body.jpeg");
 `
 
 export const SkillsContent = styled.div`
@@ -46,6 +46,12 @@ cursor: pointer;
 transition: color 0.3s;
 :hover {
  color: var(--red);
+}
+@media (max-width: 650px) {
+ font-size: 2rem;
+ img {
+  height: 2rem;
+ }
 }
 `
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
  width: 100%; 
- background-image: url("bg.jpg");
+ background-image: url("bg-body.jpeg");
 `
 
 export const AboutContent = styled.div`

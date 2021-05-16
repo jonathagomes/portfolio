@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomepageContainer = styled.div`
  width: 100%; 
- background-image: url("bg-home.jpeg");
+ background-image: url("bg-home.jpg");
 `
 
 export const HomepageContent = styled.div`

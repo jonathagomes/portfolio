@@ -5,10 +5,9 @@ import { SidebarContextProvider } from "../contexts/SidebarContext";
 import BarLoader from "react-spinners/BarLoader";
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 4000)

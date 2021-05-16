@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Homepage from "../components/Homepage";
 import Sidebar from "../components/Sidebar";
+import Skills from "../components/Skills";
 import { useSidebarContext } from "../contexts/SidebarContext";
 
 import {
@@ -19,6 +20,7 @@ export default function Home() {
       )}
       <Homepage />
       <About />
+      <Skills />
       <Footer />
     </Container>
   );

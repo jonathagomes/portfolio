@@ -7,6 +7,7 @@ import Sidebar from "../components/Sidebar";
 import Skills from "../components/Skills";
 import { useSidebarContext } from "../contexts/SidebarContext";
 
+
 import {
   Container
 } from "../styles/index";

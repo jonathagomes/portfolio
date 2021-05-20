@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+type ImageContainerProp = {
+ background: string;
+}
+
 export const ProjectsContainer = styled.div`
 width: 100%;
 background-image: url("bg-body.jpeg");
@@ -7,7 +11,7 @@ background-image: url("bg-body.jpeg");
 
 export const ProjectsContent = styled.div`
 width: 90%;
-height: calc(100vh - 5rem);
+height: calc(65vh - 5rem);
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -56,4 +60,39 @@ h1 {
 
 export const TextRed = styled.span`
 color: var(--red);
+`
+
+export const CarouselContainer = styled.div`
+width: 90%;
+margin: 0 auto;
+`
+
+export const Item = styled.div`
+ width: 100%;
+ margin: 1rem;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+ transition: all 1s;
+ transform: scale(0.9);
+
+ :hover {
+  transform: scale(1);
+ }
+
+ div:nth-child(2) {
+  height: 5rem;
+  background-color: #1D1D1D;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+}
+`
+export const ImageContainer = styled.div.attrs((props: ImageContainerProp) => ({
+ background: props.background,
+}))<ImageContainerProp>`
+background-image: url("${(props) => props.background}");
+height: 20rem;
+background-size: cover;
+background-position: center;
 `

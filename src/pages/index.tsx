@@ -7,7 +7,6 @@ import Sidebar from "../components/Sidebar";
 import Skills from "../components/Skills";
 import { useSidebarContext } from "../contexts/SidebarContext";
 
-
 import {
   Container
 } from "../styles/index";
@@ -16,7 +15,7 @@ export default function Home() {
   const { isVisible } = useSidebarContext()
   return (
     <Container>
-      <Header/>
+      <Header />
       {isVisible && (
         <Sidebar />
       )}

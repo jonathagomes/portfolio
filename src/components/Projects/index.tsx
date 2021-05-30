@@ -33,7 +33,7 @@ export default function Projects() {
     {
       id: 4,
       title: "NPS API",
-      img: "capa-nps.jpeg",
+      img: "capa-nps.png",
       link: "https://github.com/JonathaGomes/nps-api"
     },
     {

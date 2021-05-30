@@ -17,11 +17,11 @@ export default function About () {
        <h1>QUEM SOU EU?</h1>
       </Title>
       <p>Hello, meu nome é Jonatha Gomes</p>
-      <p>Sou um <TextRed>Desenvolvedor Front-end Javascript</TextRed></p>
+      <p>Sou um <TextRed>Desenvolvedor Fullstack Javascript</TextRed></p>
       <p>Em geral, gosto de gerar novas soluções para 
        problemas.<br/>Sou esforçado, motivado e adoro desafios.<br/>
-       Estou focado na <TextRed>Omnistack Javascript</TextRed>, que consiste<br/>
-       em <TextRed>NodeJS, ReactJS e React Native</TextRed>.</p>
+       Estou focado na <TextRed>Ecossistema Javascript</TextRed>, porém quero<br/>
+       focar em <TextRed>NodeJS, ReactJS e React Native</TextRed>.</p>
        <a href="#"></a>
      </div> 
    </AboutContent>

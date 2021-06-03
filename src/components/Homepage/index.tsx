@@ -16,7 +16,7 @@ export default function Homepage() {
       <h2>FULLSTACK DEVELOPER</h2>
       <p>Desenvolvendo aplicações sensacionais
       com<br/>tecnologias incríveis.</p>
-      <a href="#"></a>
+      <a href="#projects">VER PROJETOS</a>
       </div>
       <div></div> 
     </HomepageContent>

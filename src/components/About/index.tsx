@@ -22,7 +22,7 @@ export default function About () {
        problemas.<br/>Sou esforçado, motivado e adoro desafios.<br/>
        Estou focado na <TextRed>Ecossistema Javascript</TextRed>, porém quero<br/>
        focar em <TextRed>NodeJS, ReactJS e React Native</TextRed>.</p>
-       <a href="#"></a>
+       <a href="https://drive.google.com/file/d/162ampawMe1ZkkbL5OzdtL7dP2dOEZ2m-/view" target="_blank">VER MEU CURRÍCULO</a>
      </div> 
    </AboutContent>
   </AboutContainer>

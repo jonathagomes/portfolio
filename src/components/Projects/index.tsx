@@ -55,7 +55,7 @@ export default function Projects() {
     { width: 968, itemsToShow: 3},
   ]
  return(
-  <ProjectsContainer>
+  <ProjectsContainer id="projects">
    <ProjectsContent>
     <div>
       <Title>
@@ -64,7 +64,7 @@ export default function Projects() {
       <p>Projetos que desenvolvi durante minha jornada.<br/>
        alguns em <TextRed>cursos</TextRed>, outros em <TextRed>eventos</TextRed> e alguns<br/>
        são projetos <TextRed>pessoais</TextRed></p>
-       <a href="https://github.com/JonathaGomes" target="_blank"></a>
+       <a href="https://github.com/JonathaGomes" target="_blank">VEJA TODOS</a>
     </div>
     <div></div>
    </ProjectsContent>

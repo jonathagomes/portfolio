@@ -22,30 +22,21 @@ export const HomepageContent = styled.div`
  p {
   font-size: 1rem;
   color: var(--gray);
+  margin-bottom: 1rem;
  }
  a {
   color: var(--white);
+  padding: 0.5rem 1rem;
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  transition: 0.5s;
+
+  :hover {
+   background-color: transparent;
+  }
  }
- a:before {
- margin-top: 2rem;
- content: 'VER PROJETOS';
- position: relative;
- background-color: var(--red);
- font-weight: normal;
- -webkit-transition:width 0.2s;
- transition: width 0.2s;
- padding:10px;
- width:75px;
- float:left;
- white-space: nowrap;
-}
-a:hover:before {
- width:130px;
- content: 'VER PROJETOS';
- @media (max-width: 500px) {
-  width:110px;
- }
-}
+
 `
 
 export const Title = styled.div`

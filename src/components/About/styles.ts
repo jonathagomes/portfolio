@@ -27,31 +27,20 @@ p {
  color: var(--white);
  font-size: 1.2rem;
  line-height: 1.5;
+ margin-bottom: 1rem;
 }
 a {
- color: var(--white);
-}
-a:before {
- margin-top: 2rem;
- content: 'VER MEU CURRÍCULO';
- position: relative;
- background-color: var(--red);
- font-weight: normal;
- -webkit-transition:width 0.2s;
- transition: width 0.2s;
- padding:10px;
- width:100px;
- float:left;
- white-space: nowrap;
-}
-a:hover:before {
- width:180px;
- content: 'VER MEU CURRÍCULO';
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  transition: 0.5s;
 
- @media (max-width: 500px) {
-  width:150px;
+  :hover {
+   background-color: transparent;
+  }
  }
-}
 `
 
 export const Title = styled.div`

@@ -11,7 +11,7 @@ background-image: url("bg-body.jpeg");
 
 export const ProjectsContent = styled.div`
 width: 90%;
-height: calc(65vh - 5rem);
+height: calc(100vh - 5rem);
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -23,28 +23,19 @@ p {
  color: var(--white);
  font-size: 1.2rem;
  line-height: 1.5;
+ margin-bottom: 1rem;
 }
 a {
  color: var(--white);
-}
-a:before {
-content: 'VEJA TODOS';
-position: relative;
-background-color: var(--red);
-font-weight: normal;
--webkit-transition:width 0.2s;
-transition: width 0.2s;
-padding:10px;
-width:75px;
-float:left;
-white-space: nowrap;
-}
-a:hover:before {
-width:110px;
-content: 'VEJA TODOS';
-@media (max-width: 500px) {
- width:90px;
-}
+ padding: 0.5rem 1rem;
+ background-color: var(--red);
+ border: 1px solid var(--red);
+ border-radius: 5px;
+ transition: 0.5s;
+
+ :hover {
+  background-color: transparent;
+ }
 }
 `
 

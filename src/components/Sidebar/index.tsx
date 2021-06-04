@@ -9,10 +9,10 @@ export default function Sidebar() {
    <nav>
    <span onClick={toggleVisibilitySidebar}><FontAwesomeIcon icon={faTimes} /></span>
     <ul>
-     <li><a onClick={toggleVisibilitySidebar} href="#">Início</a></li>
-     <li><a onClick={toggleVisibilitySidebar} href="#">Sobre</a></li>
-     <li><a onClick={toggleVisibilitySidebar} href="#">Habilidades</a></li>
-     <li><a onClick={toggleVisibilitySidebar} href="#">Projetos</a></li>
+     <li><a onClick={toggleVisibilitySidebar} href="#home">Início</a></li>
+     <li><a onClick={toggleVisibilitySidebar} href="#about">Sobre</a></li>
+     <li><a onClick={toggleVisibilitySidebar} href="#skills">Habilidades</a></li>
+     <li><a onClick={toggleVisibilitySidebar} href="#projects">Projetos</a></li>
      <li></li>
     </ul>
    </nav>

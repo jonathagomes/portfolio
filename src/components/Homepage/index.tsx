@@ -6,7 +6,7 @@ import {
 
 export default function Homepage() {
  return (
-  <HomepageContainer>
+  <HomepageContainer id="home">
     <HomepageContent>
       <div>
       <Title>

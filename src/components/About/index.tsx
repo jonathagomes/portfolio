@@ -7,7 +7,7 @@ import {
 
 export default function About () {
  return(
-  <AboutContainer>
+  <AboutContainer id="about">
    <AboutContent>
     <div>
      <img src="/react.svg"/>

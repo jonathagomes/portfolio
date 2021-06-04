@@ -15,7 +15,7 @@ import {
 } from "./styles";
 export default function Skills() {
  return(
-  <SkillsContainer>
+  <SkillsContainer id="skills">
    <SkillsContent>
     <div>
       <Title>

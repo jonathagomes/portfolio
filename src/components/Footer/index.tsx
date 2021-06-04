@@ -20,10 +20,10 @@ export default function Footer() {
      </div>
      <nav>
       <ul>
-       <li><a href="#">Início</a></li>
-       <li><a href="#">Sobre</a></li>
-       <li><a href="#">Habilidades</a></li>
-       <li><a href="#">Projetos</a></li>
+       <li><a href="#home">Início</a></li>
+       <li><a href="#about">Sobre</a></li>
+       <li><a href="#skills">Habilidades</a></li>
+       <li><a href="#projects">Projetos</a></li>
       </ul>
      </nav>
     </FooterContent>

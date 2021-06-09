@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import Sidebar from "../components/Sidebar";
 import Skills from "../components/Skills";
 import { useSidebarContext } from "../contexts/SidebarContext";
+import { motion } from "framer-motion"
 
 import {
   Container
@@ -16,9 +17,7 @@ export default function Home() {
   return (
     <Container>
       <Header />
-      {isVisible && (
-        <Sidebar />
-      )}
+      <Sidebar />   
       <Homepage />
       <About />
       <Skills />

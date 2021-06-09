@@ -3,9 +3,9 @@ import { SidebarContainer } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 export default function Sidebar() {
- const { toggleVisibilitySidebar } = useSidebarContext();
+ const { toggleVisibilitySidebar, isVisible } = useSidebarContext();
  return (
-  <SidebarContainer>
+  <SidebarContainer style={isVisible == true ? {opacity: 1} : {opacity: 0}}>
    <nav>
    <span onClick={toggleVisibilitySidebar}><FontAwesomeIcon icon={faTimes} /></span>
     <ul>

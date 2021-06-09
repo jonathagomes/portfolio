@@ -8,38 +8,26 @@ export const SidebarContainer = styled.div`
  height: 100vh;
  background-color: #202020;
  box-shadow: 0 0 70px rgba(0, 0, 0, 0.45);
- -webkit-transition:width 0.2s;
- transition: width 0.2s;
  z-index: 10;
+ transition: 0.5s;
 
  span {
-  display: none;
+  display: block;
   color: var(--red);
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
   cursor: pointer;
-  animation-name: rodar;
+  animation-name: spin;
   animation-duration: 1.5s;
-  
 
-
-  @keyframes rodar {
+  @keyframes spin {
    from {
     transform: rotate(0);
    }
    to {
     transform: rotate(360deg);
    }
- }
-  
-  @media (max-width: 500px) {
-   display: block;
-  }
-
-  :before:hover {
-   content: "";
-   background-color: red;
   }
  }
 

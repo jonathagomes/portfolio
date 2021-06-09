@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {
  HeaderContainer,
  HeaderContent,
  Logo,
- 
+ IconContainer
 } from "./styles";
 import { useSidebarContext } from "../../contexts/SidebarContext";
 
 export default function Header() {
- const { toggleVisibilitySidebar, isVisible } = useSidebarContext()
+ const { toggleVisibilitySidebar } = useSidebarContext()
  return (
   <HeaderContainer>
    <HeaderContent>
@@ -20,14 +20,9 @@ export default function Header() {
        <span>DEV</span>
       </Logo></h1>
     </div>
-    <div>
-     { isVisible === true ? (
-      <span id="cancel" style={{ marginRight: "20rem" }} onClick={toggleVisibilitySidebar}><FontAwesomeIcon icon={faTimes} /></span>
-     ) : (
+    <IconContainer>
       <span onClick={toggleVisibilitySidebar}><FontAwesomeIcon icon={faBars} /></span>
-     ) }
-     
-    </div>
+    </IconContainer>
    </HeaderContent>
   </HeaderContainer>
  );

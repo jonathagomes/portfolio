@@ -20,22 +20,14 @@ export const HeaderContent = styled.div`
    color: var(--red);
   }
  }
+`
 
+export const IconContainer = styled.div`
  span {
-  color: var(--red);
- }
-
- div:nth-child(2) span {
   font-size: 2rem;
   cursor: pointer;
+  color: var(--red);
  }
-
- @media (max-width: 500px) {
-  #cancel {
-   display: none;
-  }
- }
-
 `
 
 export const Logo = styled.a`

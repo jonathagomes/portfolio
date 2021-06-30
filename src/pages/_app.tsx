@@ -10,28 +10,33 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000)
-  }, [])
+    }, 4000);
+  }, []);
   return (
-      <SidebarContextProvider>
-              <Wrapper>
-                <main>
-                { loading ? (
-                  <Loading>
-                    <h1>
-                      <span>JOHNNY</span>
-                      <span>DEV</span>
-                    </h1>
-                    <BarLoader height={8} width={250} color={"#F13F3F"} loading={loading} />
-                  </Loading>
-                ) : (
-                  <Component {...pageProps} />
-                ) }
-                <GlobalStyles />
-                </main>
-              </Wrapper>
-      </SidebarContextProvider>
-  )
+    <SidebarContextProvider>
+      <Wrapper>
+        <main>
+          {loading ? (
+            <Loading>
+              <h1>
+                <span>JOHNNY</span>
+                <span>DEV</span>
+              </h1>
+              <BarLoader
+                height={8}
+                width={250}
+                color={"#F13F3F"}
+                loading={loading}
+              />
+            </Loading>
+          ) : (
+            <Component {...pageProps} />
+          )}
+          <GlobalStyles />
+        </main>
+      </Wrapper>
+    </SidebarContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

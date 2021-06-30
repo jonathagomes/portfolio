@@ -5,19 +5,14 @@ import Homepage from "../components/Homepage";
 import Projects from "../components/Projects";
 import Sidebar from "../components/Sidebar";
 import Skills from "../components/Skills";
-import { useSidebarContext } from "../contexts/SidebarContext";
-import { motion } from "framer-motion"
 
-import {
-  Container
-} from "../styles/index";
+import { Container } from "../styles/index";
 
 export default function Home() {
-  const { isVisible } = useSidebarContext()
   return (
     <Container>
       <Header />
-      <Sidebar />   
+      <Sidebar />
       <Homepage />
       <About />
       <Skills />

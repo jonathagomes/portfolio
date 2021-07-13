@@ -7,7 +7,7 @@ export default function Sidebar() {
   return (
     <SidebarContainer
       style={
-        isVisible == true ? { visibility: "hidden" } : { visibility: "visible" }
+        isVisible == true ? { visibility: "visible" } : { visibility: "hidden" }
       }
     >
       <nav>

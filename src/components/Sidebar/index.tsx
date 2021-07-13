@@ -6,7 +6,9 @@ export default function Sidebar() {
   const { toggleVisibilitySidebar, isVisible } = useSidebarContext();
   return (
     <SidebarContainer
-      style={isVisible == true ? { opacity: 1 } : { opacity: 0 }}
+      style={
+        isVisible == true ? { visibility: "hidden" } : { visibility: "visible" }
+      }
     >
       <nav>
         <span onClick={toggleVisibilitySidebar}>

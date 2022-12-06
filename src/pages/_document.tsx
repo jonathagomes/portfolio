@@ -1,5 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+const teste = "sdjkfhgjhsdgfsd";
+
+console.log(teste);
 class MyDocument extends Document {
   render() {
     return (
